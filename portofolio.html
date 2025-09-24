@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Satti Naga Revanth Reddy — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="portofolio.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Three.js CDN -->
+  <script src="https://unpkg.com/three@0.159.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.159.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <!-- 3D neural network full-page canvas (behind everything) -->
+  <div id="three-root" aria-hidden="true"></div>
+
+  <!-- Top navigation -->
+  <header class="topbar">
+    <div class="brand"> ♡REVANTH REDDY♡</div>
+    <nav class="topnav" aria-label="Primary navigation">
+      <button data-target="home"><i class="fas fa-house"></i> Home</button>
+      <button data-target="about"><i class="fas fa-user"></i> About</button>
+      <button data-target="skills"><i class="fas fa-cogs"></i> Skills</button>
+      <button data-target="projects"><i class="fas fa-briefcase"></i> Projects</button>
+      <button data-target="edu"><i class="fas fa-graduation-cap"></i> Education</button>
+      <button data-target="contact"><i class="fas fa-envelope"></i> Contact</button>
+    </nav>
+
+    <div class="actions">
+      <a class="btn btn-primary download" href="Revanth_RESUME.pdf" download>
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </header>
+
+  <!-- Vertical slides -->
+  <main id="slides" class="slides">
+    <!-- Hero -->
+    <section id="home" class="slide hero split">
+      <div class="left">
+        <div class="intro-card glass">
+          <div class="eyebrow"><i class="fas fa-id-card"></i> PORTFOLIO</div>
+          <h1 class="hero-title">Satti Naga <span class="accent">Revanth Reddy</span></h1>
+          <p class="lead"><i class="fas fa-graduation-cap"></i> B.Tech (IT) • Frontend & Full-stack learner</p>
+          <p class="typed">I'm a <span id="typed"></span><span class="cursor">|</span></p>
+
+          <div class="hero-ctas">
+            <button class="btn btn-ghost" data-target="projects"><i class="fas fa-eye"></i> See My Work</button>
+            <a class="btn btn-primary" href="mailto:sattinagarevanthreddy13@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
+          </div>
+
+          <ul class="mini-stats">
+            <li><i class="fas fa-star"></i> CGPA: 8.08</li>
+            <li><i class="fas fa-code"></i> LeetCode: Moderate</li>
+            <li><i class="fas fa-briefcase"></i> Open to internships</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="portrait-card glass floating">
+          <img src="aaaa.jpg" alt="Revanth profile ">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="slide split">
+      <div class="left glass">
+        <h2 class="slide-head"><i class="fas fa-user"></i> About</h2>
+        <p>I'm an IT undergraduate at Aditya University. I enjoy building accessible, high-performance frontends and learning backend fundamentals. I focus on clean code, performance and accessibility.<br/><br/></p>
+        <p><strong><i class="fas fa-envelope"></i> Contact:</strong> 
+          <a href="mailto:sattinagarevanthreddy13@gmail.com">sattinagarevanthreddy13@gmail.com</a>
+        </p>
+      </div>
+      <div class="right glass highlight">
+        <h2><i class="fas fa-lightbulb"></i> Highlights</h2>
+        <ul>
+          <li><i class="fas fa-laptop-code"></i> Summer Internship — Full Stack (React Native) • May–Jun 2025</li>
+          <li><i class="fas fa-user-tie"></i> Campus Ambassador — Rinex AI Technologies</li>
+          <li><i class="fas fa-trophy"></i> Selected: Owl-Coder 4.0</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="slide">
+      <div class="container glass">
+        <h2 class="slide-head"><i class="fas fa-cogs"></i> Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill"><i class="fas fa-code"></i> Java · C · Python · JavaScript · HTML · CSS · SQL</div>
+          <div class="skill"><i class="fas fa-database"></i> DSA · OOP · DBMS · Problem Solving</div>
+          <div class="skill"><i class="fas fa-terminal"></i> Git · GitHub · Linux · VS Code</div>
+          <div class="skill"><i class="fas fa-rocket"></i> Exploring: Node.js · React · React Native</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="slide">
+      <div class="container">
+        <h2 class="slide-head"><i class="fas fa-briefcase"></i> Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="proj-card" data-tilt>
+            <h3><i class="fas fa-file-alt"></i> Smart Resume Builder</h3>
+            <p>Responsive multi-layout resume builder designed with ATS best practices.</p>
+            <div class="meta">HTML · CSS · JS</div>
+          </article>
+
+          <article class="proj-card" data-tilt>
+            <h3><i class="fas fa-handshake"></i> LocalHands</h3>
+            <p>Local services platform — realtime provider discovery & booking (WIP).</p>
+            <div class="meta">Next.js · Node.js · Tailwind</div>
+          </article>
+
+          <article class="proj-card" data-tilt>
+            <h3><i class="fas fa-question-circle"></i> Quizzes & Tests</h3>
+            <p>Reasoning quizzes (number & letter series) with evaluation logic.</p>
+            <div class="meta">JavaScript</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="edu" class="slide">
+      <div class="container glass">
+        <h2 class="slide-head"><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="edu-grid">
+          <div class="edu-card"><i class="fas fa-university"></i> B.Tech (IT) — Aditya University • Aug 2023 – Jun 2027 • CGPA: 8.08</div>
+          <div class="edu-card"><i class="fas fa-school"></i> Intermediate — Tirumala Junior College • Sep 2021 – May 2023 • 960/1000</div>
+          <div class="edu-card"><i class="fas fa-book-open"></i> SSC — Sri Siddartha EM High School • Jun 2021 • 592/600</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="slide split">
+      <div class="left glass">
+        <h2><i class="fas fa-envelope"></i> Let's Connect<br/><br/></h2>
+        <p><i class="fas fa-envelope"></i> Email: 
+          <a href="mailto:sattinagarevanthreddy13@gmail.com">sattinagarevanthreddy13@gmail.com<br/><br/></a>
+        </p>
+        <p><i class="fas fa-phone"></i> Phone: 
+          <a href="tel:+919988852226">+91 9988852226<br/><br/></a>
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://github.com/RevanthReddy1310" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/satti-naga-revanth-reddy-a17927290/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="right glass highlight">
+        <h2><i class="fas fa-user-clock"></i> Availability</h2>
+        <p>Open for internships, freelance and collaborative projects. I prefer roles where I can grow with mentorship and build production-grade apps.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dots navigation -->
+  <nav class="dots" id="dots" aria-label="Section navigation"></nav>
+
+  <footer class="foot">© <span id="year"></span> Satti Naga Revanth Reddy</footer>
+
+  <script src="portofolio.js"></script>
+</body>
+</html>
